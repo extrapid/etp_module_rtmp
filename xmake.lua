@@ -1,6 +1,7 @@
 add_rules("mode.debug", "mode.release")
 add_includedirs(".","net","xop","mongoose")
 add_cxxflags("-shared -fPIC")
+add_cflags("-shared -fPIC")
 add_syslinks("dl", "pthread", "m")
 
 target("deps")
